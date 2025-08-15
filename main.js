@@ -22,7 +22,7 @@ const callOkeyAI = () => {
         loader.classList.add('d-none');
         resultContainer.classList.remove('d-none');
         resultContainer.classList.add('d-block');
-        const aiResponse = data.response;
+        const aiResponse = JSON.parse(data.response);
         resultContainer.textContent = aiResponse;
       }
     })
