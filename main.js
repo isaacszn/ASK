@@ -18,7 +18,6 @@ const callOkeyAI = () => {
     .then((response) => response.json())
     .then(data => {
       if (data) {
-        document.write(data)
         loader.classList.remove('d-block');
         loader.classList.add('d-none');
         resultContainer.classList.remove('d-none');
