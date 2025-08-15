@@ -15,7 +15,7 @@ const callOkeyAI = () => {
   loader.classList.add('d-block');
   
   fetch(`/api/function?input=${prompt}`)
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then(data => {
       if (data) {
         loader.classList.remove('d-block');
