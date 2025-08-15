@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASK</title>
+  <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
+</head>
+
+<body class="w-100">
+  <div class="d-flex justify-content-center align-items-center flex-column">
+    <h1 class="mt-5 mb-3 font-serif">ASK 🤔🤖</h1>
+    <p class="text-center m-3">Ask me anything you want...</p>
+    <input type="text" id="prompt" value="What is OkeyAI?" class="form-control-lg m-3 font-monospace" />
+    <button type="button" onclick="callOkeyAI()" class="btn btn-primary m-3 font-monospace">Ask!</button>
+    
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <p id="loader" class="text-primary m-5 d-none">Loading...</p>
+      <p id="result" class="m-5 bg-dark text-light rounded-4 p-3 font-serif d-none" style="font-family: serif; width: 85%;"></p>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
