@@ -26,5 +26,8 @@ const callOkeyAI = () => {
         resultContainer.textContent = aiResponse;
       }
     })
-    .catch(err => console.error(err));
+    .catch((err) => {
+      console.error(err)
+      alert(err)
+    });
 };
