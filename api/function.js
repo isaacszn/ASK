@@ -1,9 +1,9 @@
-export default async function handler(req, res) {
+prompt default async function handler(req, res) {
     try {
         const apiKey = process.env.API_KEY;
-        const { prompt } = req.query;
+        const { input } = req.query;
         // Fetch data
-        const response = await fetch(`https://api.okeymeta.com.ng/api/ssailm/model/okeyai3.0-vanguard/okeyai?input=${prompt}`, {
+        const response = await fetch(`https://api.okeymeta.com.ng/api/ssailm/model/okeyai3.0-vanguard/okeyai?input=${input}`, {
             method: "GET",
             headers: {
                 "Authorization": apiKey
@@ -16,4 +16,5 @@ export default async function handler(req, res) {
     } catch (error) {
         res.status(500).json({ error: 'Failed to fetch data' });
     }
+
 }
