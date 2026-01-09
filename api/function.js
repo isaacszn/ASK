@@ -1,4 +1,4 @@
-prompt default async function handler(req, res) {
+export default async function handler(req, res) {
     try {
         const apiKey = process.env.API_KEY;
         const { input } = req.query;
@@ -18,3 +18,4 @@ prompt default async function handler(req, res) {
     }
 
 }
+
